@@ -12,7 +12,35 @@
 		FB175B651FB3FF9C0015ACEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB175B631FB3FF9C0015ACEA /* Main.storyboard */; };
 		FB175B671FB3FF9C0015ACEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB175B661FB3FF9C0015ACEA /* Assets.xcassets */; };
 		FB175B6A1FB3FF9C0015ACEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB175B681FB3FF9C0015ACEA /* LaunchScreen.storyboard */; };
+		FB175B7E1FB4071B0015ACEA /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = FB175B7C1FB4071B0015ACEA /* Model.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB175B811FB4071B0015ACEA /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB175B7A1FB4071B0015ACEA /* Model.framework */; };
+		FB175B821FB4071B0015ACEA /* Model.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB175B7A1FB4071B0015ACEA /* Model.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB175B8B1FB407B00015ACEA /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175B8A1FB407B00015ACEA /* APIRouter.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB175B7F1FB4071B0015ACEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB175B541FB3FF9C0015ACEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB175B791FB4071B0015ACEA;
+			remoteInfo = Model;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB175B861FB4071B0015ACEA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FB175B821FB4071B0015ACEA /* Model.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FB175B5C1FB3FF9C0015ACEA /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +50,22 @@
 		FB175B661FB3FF9C0015ACEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB175B691FB3FF9C0015ACEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB175B6B1FB3FF9C0015ACEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB175B7A1FB4071B0015ACEA /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB175B7C1FB4071B0015ACEA /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		FB175B7D1FB4071B0015ACEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB175B8A1FB407B00015ACEA /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIRouter.swift; path = API/Router/APIRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FB175B591FB3FF9C0015ACEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB175B811FB4071B0015ACEA /* Model.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB175B761FB4071B0015ACEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				FB175B5E1FB3FF9C0015ACEA /* NewsApp */,
+				FB175B7B1FB4071B0015ACEA /* Model */,
 				FB175B5D1FB3FF9C0015ACEA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				FB175B5C1FB3FF9C0015ACEA /* NewsApp.app */,
+				FB175B7A1FB4071B0015ACEA /* Model.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +96,10 @@
 		FB175B5E1FB3FF9C0015ACEA /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				FB175B741FB406D30015ACEA /* Controllers */,
+				FB175B731FB406C90015ACEA /* ViewModel */,
+				FB175B721FB406BB0015ACEA /* View */,
+				FB175B711FB406A40015ACEA /* Extensions */,
 				FB175B5F1FB3FF9C0015ACEA /* AppDelegate.swift */,
 				FB175B611FB3FF9C0015ACEA /* ViewController.swift */,
 				FB175B631FB3FF9C0015ACEA /* Main.storyboard */,
@@ -64,7 +110,80 @@
 			path = NewsApp;
 			sourceTree = "<group>";
 		};
+		FB175B711FB406A40015ACEA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		FB175B721FB406BB0015ACEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FB175B731FB406C90015ACEA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		FB175B741FB406D30015ACEA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FB175B7B1FB4071B0015ACEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB175B881FB407740015ACEA /* Entities */,
+				FB175B871FB407570015ACEA /* API */,
+				FB175B7C1FB4071B0015ACEA /* Model.h */,
+				FB175B7D1FB4071B0015ACEA /* Info.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB175B871FB407570015ACEA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FB175B891FB407960015ACEA /* Router */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		FB175B881FB407740015ACEA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		FB175B891FB407960015ACEA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FB175B8A1FB407B00015ACEA /* APIRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FB175B771FB4071B0015ACEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB175B7E1FB4071B0015ACEA /* Model.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		FB175B5B1FB3FF9C0015ACEA /* NewsApp */ = {
@@ -74,15 +193,35 @@
 				FB175B581FB3FF9C0015ACEA /* Sources */,
 				FB175B591FB3FF9C0015ACEA /* Frameworks */,
 				FB175B5A1FB3FF9C0015ACEA /* Resources */,
+				FB175B861FB4071B0015ACEA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FB175B801FB4071B0015ACEA /* PBXTargetDependency */,
 			);
 			name = NewsApp;
 			productName = NewsApp;
 			productReference = FB175B5C1FB3FF9C0015ACEA /* NewsApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FB175B791FB4071B0015ACEA /* Model */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB175B831FB4071B0015ACEA /* Build configuration list for PBXNativeTarget "Model" */;
+			buildPhases = (
+				FB175B751FB4071B0015ACEA /* Sources */,
+				FB175B761FB4071B0015ACEA /* Frameworks */,
+				FB175B771FB4071B0015ACEA /* Headers */,
+				FB175B781FB4071B0015ACEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Model;
+			productName = Model;
+			productReference = FB175B7A1FB4071B0015ACEA /* Model.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +236,12 @@
 					FB175B5B1FB3FF9C0015ACEA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = STRYF8536N;
+						ProvisioningStyle = Automatic;
+					};
+					FB175B791FB4071B0015ACEA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = STRYF8536N;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -115,6 +260,7 @@
 			projectRoot = "";
 			targets = (
 				FB175B5B1FB3FF9C0015ACEA /* NewsApp */,
+				FB175B791FB4071B0015ACEA /* Model */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +276,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB175B781FB4071B0015ACEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +295,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB175B751FB4071B0015ACEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB175B8B1FB407B00015ACEA /* APIRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB175B801FB4071B0015ACEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB175B791FB4071B0015ACEA /* Model */;
+			targetProxy = FB175B7F1FB4071B0015ACEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FB175B631FB3FF9C0015ACEA /* Main.storyboard */ = {
@@ -262,6 +431,7 @@
 		FB175B6F1FB3FF9C0015ACEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = STRYF8536N;
 				INFOPLIST_FILE = NewsApp/Info.plist;
@@ -275,6 +445,7 @@
 		FB175B701FB3FF9C0015ACEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = STRYF8536N;
 				INFOPLIST_FILE = NewsApp/Info.plist;
@@ -282,6 +453,53 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.NewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FB175B841FB4071B0015ACEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = STRYF8536N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Model/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.Model;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB175B851FB4071B0015ACEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = STRYF8536N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Model/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.Model;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -302,6 +520,14 @@
 			buildConfigurations = (
 				FB175B6F1FB3FF9C0015ACEA /* Debug */,
 				FB175B701FB3FF9C0015ACEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB175B831FB4071B0015ACEA /* Build configuration list for PBXNativeTarget "Model" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB175B841FB4071B0015ACEA /* Debug */,
+				FB175B851FB4071B0015ACEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
