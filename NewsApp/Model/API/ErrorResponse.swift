@@ -7,15 +7,23 @@
 //
 
 import Foundation
-import APIClient
+import FoxAPIKit
+import JSONParsing
 
 private let errorKey = "error"
 
 public struct ErrorResponse: ErrorResponseProtocol {
-    public static func parse(_ json: JSON, code: Int) throws -> ErrorResponse {
-        return try ErrorResponse(code: json["error_code"]^, messages: [json[errorKey]^])
+    public var domain: String {
+        return ""
     }
     
+    public static func parse(_ json: JSON, code: Int) throws -> ErrorResponse {
+        if 200...299 ~= code {
+            throw NSError(domain: "", code: code, userInfo: nil)
+        }
+        return try ErrorResponse(code: code, messages: [json["message"]^])
+    }
+
     public var code: Int
     public let messages: [String]
     public var compiledErrorMessage: String{

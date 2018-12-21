@@ -7,9 +7,12 @@
 //
 
 import Foundation
-import APIClient
+import FoxAPIKit
 
-public struct NewsError: APIError {
+public struct NewsError: AnyError {
+    public var domain: String {
+        return ""
+    }
     public var code: Int
     public var title: String
     public var message: String

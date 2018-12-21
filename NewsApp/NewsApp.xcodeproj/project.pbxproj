@@ -21,6 +21,9 @@
 		FB0DA8461FB43F6800E18243 /* ArticleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0DA8451FB43F6800E18243 /* ArticleTableCell.swift */; };
 		FB0DA8481FB442B000E18243 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0DA8471FB442B000E18243 /* NewsViewController.swift */; };
 		FB0DA84A1FB4448200E18243 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0DA8491FB4448200E18243 /* Category.swift */; };
+		FB0DA84D1FB4618500E18243 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0DA84C1FB4618500E18243 /* UIImage.swift */; };
+		FB0DA84F1FB4625600E18243 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0DA84E1FB4625600E18243 /* ArticleViewModel.swift */; };
+		FB0DA8511FB4657F00E18243 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0DA8501FB4657F00E18243 /* CategoryViewModel.swift */; };
 		FB175B601FB3FF9C0015ACEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175B5F1FB3FF9C0015ACEA /* AppDelegate.swift */; };
 		FB175B651FB3FF9C0015ACEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB175B631FB3FF9C0015ACEA /* Main.storyboard */; };
 		FB175B671FB3FF9C0015ACEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB175B661FB3FF9C0015ACEA /* Assets.xcassets */; };
@@ -29,6 +32,7 @@
 		FB175B811FB4071B0015ACEA /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB175B7A1FB4071B0015ACEA /* Model.framework */; };
 		FB175B821FB4071B0015ACEA /* Model.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB175B7A1FB4071B0015ACEA /* Model.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FB175B8D1FB40DA30015ACEA /* NewsAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB175B8C1FB40DA30015ACEA /* NewsAPIRouter.swift */; };
+		FBE5695220AD47A700F82040 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBE5695020AD47A700F82040 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,9 @@
 		FB0DA8451FB43F6800E18243 /* ArticleTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleTableCell.swift; path = View/ArticleTableCell.swift; sourceTree = "<group>"; };
 		FB0DA8471FB442B000E18243 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = Controllers/NewsViewController.swift; sourceTree = "<group>"; };
 		FB0DA8491FB4448200E18243 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = Entities/Category.swift; sourceTree = "<group>"; };
+		FB0DA84C1FB4618500E18243 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Utilities/UIImage.swift; sourceTree = "<group>"; };
+		FB0DA84E1FB4625600E18243 /* ArticleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleViewModel.swift; path = ViewModel/ArticleViewModel.swift; sourceTree = "<group>"; };
+		FB0DA8501FB4657F00E18243 /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryViewModel.swift; path = ViewModel/CategoryViewModel.swift; sourceTree = "<group>"; };
 		FB175B5C1FB3FF9C0015ACEA /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB175B5F1FB3FF9C0015ACEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB175B641FB3FF9C0015ACEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +91,10 @@
 		FB175B7C1FB4071B0015ACEA /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		FB175B7D1FB4071B0015ACEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB175B8C1FB40DA30015ACEA /* NewsAPIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsAPIRouter.swift; path = API/Router/NewsAPIRouter.swift; sourceTree = "<group>"; };
+		FBE5694E20AD473E00F82040 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Main.strings; sourceTree = "<group>"; };
+		FBE5694F20AD473E00F82040 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FBE5695120AD47A700F82040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = NewsApp/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FBE5695320AD47C900F82040 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = NewsApp/hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,9 +146,18 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
+		FB0DA84B1FB4615B00E18243 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FB0DA84C1FB4618500E18243 /* UIImage.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		FB175B531FB3FF9C0015ACEA = {
 			isa = PBXGroup;
 			children = (
+				FBE5695020AD47A700F82040 /* Localizable.strings */,
 				FB175B5E1FB3FF9C0015ACEA /* NewsApp */,
 				FB175B7B1FB4071B0015ACEA /* Model */,
 				FB175B5D1FB3FF9C0015ACEA /* Products */,
@@ -158,6 +178,7 @@
 		FB175B5E1FB3FF9C0015ACEA /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				FB0DA84B1FB4615B00E18243 /* Utilities */,
 				FB175B741FB406D30015ACEA /* Controllers */,
 				FB175B731FB406C90015ACEA /* ViewModel */,
 				FB175B721FB406BB0015ACEA /* View */,
@@ -190,6 +211,8 @@
 		FB175B731FB406C90015ACEA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FB0DA84E1FB4625600E18243 /* ArticleViewModel.swift */,
+				FB0DA8501FB4657F00E18243 /* CategoryViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -269,7 +292,6 @@
 				FB175B5A1FB3FF9C0015ACEA /* Resources */,
 				FB175B861FB4071B0015ACEA /* Embed Frameworks */,
 				4C41A014E61E01E19F29FFCE /* [CP] Embed Pods Frameworks */,
-				E8F2BA48D2AF653789E444F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -290,7 +312,6 @@
 				FB175B761FB4071B0015ACEA /* Frameworks */,
 				FB175B771FB4071B0015ACEA /* Headers */,
 				FB175B781FB4071B0015ACEA /* Resources */,
-				B42D0FBFD15607E0A23C965F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,7 +329,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Vaibhav Parmar";
 				TargetAttributes = {
 					FB175B5B1FB3FF9C0015ACEA = {
@@ -331,6 +352,7 @@
 			knownRegions = (
 				en,
 				Base,
+				hi,
 			);
 			mainGroup = FB175B531FB3FF9C0015ACEA;
 			productRefGroup = FB175B5D1FB3FF9C0015ACEA /* Products */;
@@ -349,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB175B6A1FB3FF9C0015ACEA /* LaunchScreen.storyboard in Resources */,
+				FBE5695220AD47A700F82040 /* Localizable.strings in Resources */,
 				FB175B671FB3FF9C0015ACEA /* Assets.xcassets in Resources */,
 				FB175B651FB3FF9C0015ACEA /* Main.storyboard in Resources */,
 			);
@@ -374,9 +397,11 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/APIClient/APIClient.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AnyErrorKit/AnyErrorKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FLUtilities/FLUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/FoxAPIKit/FoxAPIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONParsing/JSONParsing.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -384,9 +409,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnyErrorKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoxAPIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONParsing.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,36 +457,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B42D0FBFD15607E0A23C965F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Model/Pods-Model-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E8F2BA48D2AF653789E444F7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -468,8 +465,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0DA8441FB43E6800E18243 /* CategoryCollectionCell.swift in Sources */,
+				FB0DA84D1FB4618500E18243 /* UIImage.swift in Sources */,
 				FB0DA8461FB43F6800E18243 /* ArticleTableCell.swift in Sources */,
+				FB0DA84F1FB4625600E18243 /* ArticleViewModel.swift in Sources */,
 				FB0DA8481FB442B000E18243 /* NewsViewController.swift in Sources */,
+				FB0DA8511FB4657F00E18243 /* CategoryViewModel.swift in Sources */,
 				FB175B601FB3FF9C0015ACEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +506,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FB175B641FB3FF9C0015ACEA /* Base */,
+				FBE5694E20AD473E00F82040 /* hi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -514,8 +515,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				FB175B691FB3FF9C0015ACEA /* Base */,
+				FBE5694F20AD473E00F82040 /* hi */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FBE5695020AD47A700F82040 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBE5695120AD47A700F82040 /* Base */,
+				FBE5695320AD47C900F82040 /* hi */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -525,21 +536,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -576,21 +596,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -620,7 +649,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F73AFFEAB572E23F836B2001 /* Pods-NewsApp.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = STRYF8536N;
 				INFOPLIST_FILE = NewsApp/Info.plist;
@@ -635,7 +663,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8012FD956A4BAA817705474 /* Pods-NewsApp.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = STRYF8536N;
 				INFOPLIST_FILE = NewsApp/Info.plist;

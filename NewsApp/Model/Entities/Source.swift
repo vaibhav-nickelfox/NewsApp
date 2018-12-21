@@ -7,8 +7,9 @@
 //
 
 import Foundation
-import APIClient
+import FoxAPIKit
 import ReactiveSwift
+import JSONParsing
 
 final public class Source {
     public var id: String
@@ -31,13 +32,15 @@ extension Source: JSONParseable {
 extension Source {
     public static func fetchSources() -> SignalProducer<[Source], NewsError> {
         return SignalProducer.init({ (observer, lifetime) in
-            NewsAPIClient.shared.request(router: NewsAPIRouter.sources) {(result: APIResult<ListResponse<Source>>) in
+            NewsAPIClient.shared.request(NewsAPIRouter.sources) {(result: APIResult<ListResponse<Source>>) in
                 switch result {
                 case .success(let response):
                     observer.send(value: response.list)
                     observer.sendCompleted()
                 case .failure(let error):
-                    observer.send(error: NewsError(code: error.code, title: error.title, message: error.message))
+                    let error = NewsError(code: error.code, title: "Error", message: error.message)
+                    observer.send(error: error)
+//                    observer.send(error: NewsError(code: error.code, title: error.title, message: error.message))
                 }
             }
         })

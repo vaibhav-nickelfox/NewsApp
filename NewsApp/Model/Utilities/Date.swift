@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import APIClient
+import FoxAPIKit
 
 extension Date {
     public typealias RawValue = String

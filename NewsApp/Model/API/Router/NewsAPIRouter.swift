@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import APIClient
+import FoxAPIKit
 
 public enum NewsAPIRouter: Router {
     case articles(source: String)

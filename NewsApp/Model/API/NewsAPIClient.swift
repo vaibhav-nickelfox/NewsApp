@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import APIClient
+import FoxAPIKit
 
 class NewsAPIClient: APIClient<AuthHeaders, ErrorResponse> {
     static let shared = NewsAPIClient()

@@ -10,7 +10,7 @@ import Foundation
 import ReactiveSwift
 
 public class  Category {
-    public var key: String?
+    public var key: String
     public var sources: [Source]
     
     public init(key: String, sources: [Source]) {

@@ -32,7 +32,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="QQH-IJ-hal"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gZF-4H-tth">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gZF-4H-tth">
                                     <size key="itemSize" width="150" height="35"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -116,7 +116,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="FLd-hC-lc4" id="NLx-KA-1Fu"/>
-                                            <outlet property="headlineLable" destination="OEF-y0-7zV" id="8uO-6k-eBG"/>
+                                            <outlet property="headlineLabel" destination="OEF-y0-7zV" id="p7i-2T-dxz"/>
                                             <outlet property="sourceLabel" destination="s18-z7-Pw7" id="NvK-1a-piY"/>
                                             <outlet property="thumbnailView" destination="ljp-gz-9mb" id="9el-gB-Xaf"/>
                                         </connections>
@@ -135,6 +135,10 @@
                             <constraint firstAttribute="trailing" secondItem="ms4-Ct-8ZV" secondAttribute="trailing" id="wSh-5T-WY9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="brL-0g-AZd" id="yM7-Y7-7YW"/>
+                        <outlet property="tableView" destination="ms4-Ct-8ZV" id="M4V-8Z-vio"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

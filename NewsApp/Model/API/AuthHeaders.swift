@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import APIClient
+import FoxAPIKit
+import JSONParsing
 
 private let accessTokenKey = "access-token"
 public struct AuthHeaders: AuthHeadersProtocol {
