@@ -30,10 +30,10 @@ public struct ActionInterface {
 	
 	public var id: AnyObject!
 	public var title: String = ""
-	public var style: UIAlertActionStyle = .default
+    public var style: UIAlertAction.Style = .default
 	public var alertAction: UIAlertAction!
 	
-	public init(id: AnyObject? = nil, title: String, style: UIAlertActionStyle = .default) {
+	public init(id: AnyObject? = nil, title: String, style: UIAlertAction.Style = .default) {
         self.id = id ?? title as AnyObject?
 		self.title = title
 		self.style = style
@@ -75,7 +75,7 @@ public extension UIAlertController {
 		)
 	}
 	
-	class func showAlertController(title: String?, message: String?, preferredStyle: UIAlertControllerStyle, actionInterfaceList: [ActionInterface], handler: @escaping AlertHandler) {
+    class func showAlertController(title: String?, message: String?, preferredStyle: UIAlertController.Style, actionInterfaceList: [ActionInterface], handler: @escaping AlertHandler) {
 		let alertController = UIAlertController.alertController(
 			title: title,
 			message: message,
@@ -89,7 +89,7 @@ public extension UIAlertController {
 		}
 	}
 	
-	class func alertController(title: String?, message: String?, preferredStyle: UIAlertControllerStyle, actionInterfaceList: [ActionInterface], handler: @escaping AlertHandler) -> UIAlertController {
+	class func alertController(title: String?, message: String?, preferredStyle: UIAlertController.Style, actionInterfaceList: [ActionInterface], handler: @escaping AlertHandler) -> UIAlertController {
 		let alertController = UIAlertController(title: title ?? "", message: message, preferredStyle: preferredStyle)
 		for var actionInterface in actionInterfaceList {
 			let button = UIAlertAction(title: actionInterface.title, style: actionInterface.style, handler: { (action: UIAlertAction) -> Void in
@@ -155,7 +155,7 @@ public extension UIViewController {
 		)
 	}
 	
-	func showAlertController(title: String?, message: String?, preferredStyle: UIAlertControllerStyle, actionInterfaceList: [ActionInterface], handler: @escaping AlertHandler) {
+	func showAlertController(title: String?, message: String?, preferredStyle: UIAlertController.Style, actionInterfaceList: [ActionInterface], handler: @escaping AlertHandler) {
 		let alertController = UIAlertController.alertController(
 			title: title,
 			message: message,

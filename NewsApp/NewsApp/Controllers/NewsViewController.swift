@@ -78,7 +78,7 @@ extension NewsViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.scrollToItem(
             at: indexPath,
-            at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
+            at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
         self.prepareArticlesModel(from: categoriesViewModel.sources[indexPath.item])
     }
 }

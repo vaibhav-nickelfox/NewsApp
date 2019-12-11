@@ -1853,9 +1853,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0CEA212303080E08316665B0436DA2AC /* Release */ = {
+		0FEDBD48AAE2A86F9D9822FB1C93D925 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE066BC8C306228F0EC621025F88BAAE /* JSONParsing.xcconfig */;
+			baseConfigurationReference = F17AC8B36BB6BFF7A82A57FBDED818EC /* FoxAPIKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1866,18 +1866,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JSONParsing/JSONParsing-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JSONParsing/JSONParsing-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FoxAPIKit/FoxAPIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FoxAPIKit/FoxAPIKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JSONParsing/JSONParsing.modulemap";
-				PRODUCT_MODULE_NAME = JSONParsing;
-				PRODUCT_NAME = JSONParsing;
+				MODULEMAP_FILE = "Target Support Files/FoxAPIKit/FoxAPIKit.modulemap";
+				PRODUCT_MODULE_NAME = FoxAPIKit;
+				PRODUCT_NAME = FoxAPIKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1917,133 +1917,7 @@
 			};
 			name = Release;
 		};
-		19325F42DB95CDE036BBDE33A4CB60F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F17AC8B36BB6BFF7A82A57FBDED818EC /* FoxAPIKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FoxAPIKit/FoxAPIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FoxAPIKit/FoxAPIKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FoxAPIKit/FoxAPIKit.modulemap";
-				PRODUCT_MODULE_NAME = FoxAPIKit;
-				PRODUCT_NAME = FoxAPIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		31B62507FFF3165FDD1654304850957F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB0807CFC34F4B7596A608C97DA343DB /* FLUtilities.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FLUtilities/FLUtilities-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FLUtilities/FLUtilities-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FLUtilities/FLUtilities.modulemap";
-				PRODUCT_MODULE_NAME = FLUtilities;
-				PRODUCT_NAME = FLUtilities;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		387A4C04FE7109711930BC488063CFD1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F17AC8B36BB6BFF7A82A57FBDED818EC /* FoxAPIKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FoxAPIKit/FoxAPIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FoxAPIKit/FoxAPIKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FoxAPIKit/FoxAPIKit.modulemap";
-				PRODUCT_MODULE_NAME = FoxAPIKit;
-				PRODUCT_NAME = FoxAPIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		388BCBCD06F5A3DD61F41542CD5DFC31 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB0807CFC34F4B7596A608C97DA343DB /* FLUtilities.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FLUtilities/FLUtilities-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FLUtilities/FLUtilities-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FLUtilities/FLUtilities.modulemap";
-				PRODUCT_MODULE_NAME = FLUtilities;
-				PRODUCT_NAME = FLUtilities;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3E41ADE1ED0E15844F89E51F9529C3F1 /* Debug */ = {
+		5156F95A579569B0C526DFDC259099E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D2B6E33DE50BB7BC5396CA5DE47E7D9B /* AnyErrorKit.xcconfig */;
 			buildSettings = {
@@ -2067,12 +1941,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		52501B36A711A544236E3CE1DD33D617 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2101,6 +1976,37 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59536D7671237064D3C6252639179448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F17AC8B36BB6BFF7A82A57FBDED818EC /* FoxAPIKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FoxAPIKit/FoxAPIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FoxAPIKit/FoxAPIKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FoxAPIKit/FoxAPIKit.modulemap";
+				PRODUCT_MODULE_NAME = FoxAPIKit;
+				PRODUCT_NAME = FoxAPIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2200,37 +2106,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		8C079D3D357FD72432BC6951F76DA9E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE066BC8C306228F0EC621025F88BAAE /* JSONParsing.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JSONParsing/JSONParsing-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JSONParsing/JSONParsing-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JSONParsing/JSONParsing.modulemap";
-				PRODUCT_MODULE_NAME = JSONParsing;
-				PRODUCT_NAME = JSONParsing;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2419,6 +2294,101 @@
 			};
 			name = Release;
 		};
+		A3DCFF0A87A1374FB0D699EF5760B17D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE066BC8C306228F0EC621025F88BAAE /* JSONParsing.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JSONParsing/JSONParsing-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSONParsing/JSONParsing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSONParsing/JSONParsing.modulemap";
+				PRODUCT_MODULE_NAME = JSONParsing;
+				PRODUCT_NAME = JSONParsing;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9A37DC320BDFBA208E0850E572BFA17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB0807CFC34F4B7596A608C97DA343DB /* FLUtilities.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FLUtilities/FLUtilities-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FLUtilities/FLUtilities-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FLUtilities/FLUtilities.modulemap";
+				PRODUCT_MODULE_NAME = FLUtilities;
+				PRODUCT_NAME = FLUtilities;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B70E1B623F70E9A5E6694570588F1BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B6E33DE50BB7BC5396CA5DE47E7D9B /* AnyErrorKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AnyErrorKit/AnyErrorKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnyErrorKit/AnyErrorKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnyErrorKit/AnyErrorKit.modulemap";
+				PRODUCT_MODULE_NAME = AnyErrorKit;
+				PRODUCT_NAME = AnyErrorKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		B815C528DFCD9EBEB4E5B00019C8691C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E8E54B444902AA9F158945E4D337C40 /* Pods-Model.debug.xcconfig */;
@@ -2452,9 +2422,9 @@
 			};
 			name = Debug;
 		};
-		BCE8042F7C0928DB09648C84B08E4631 /* Release */ = {
+		BB84F45C6E89B3B23E12CD1FD2CD87D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2B6E33DE50BB7BC5396CA5DE47E7D9B /* AnyErrorKit.xcconfig */;
+			baseConfigurationReference = BE066BC8C306228F0EC621025F88BAAE /* JSONParsing.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2465,24 +2435,54 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AnyErrorKit/AnyErrorKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AnyErrorKit/AnyErrorKit-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/JSONParsing/JSONParsing-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSONParsing/JSONParsing-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AnyErrorKit/AnyErrorKit.modulemap";
-				PRODUCT_MODULE_NAME = AnyErrorKit;
-				PRODUCT_NAME = AnyErrorKit;
+				MODULEMAP_FILE = "Target Support Files/JSONParsing/JSONParsing.modulemap";
+				PRODUCT_MODULE_NAME = JSONParsing;
+				PRODUCT_NAME = JSONParsing;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		DB06EFDFAA7C7AFF2BCADFD6C4D389E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB0807CFC34F4B7596A608C97DA343DB /* FLUtilities.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FLUtilities/FLUtilities-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FLUtilities/FLUtilities-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FLUtilities/FLUtilities.modulemap";
+				PRODUCT_MODULE_NAME = FLUtilities;
+				PRODUCT_NAME = FLUtilities;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		E9F281DE241B0E88C1756BEF19880C49 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2630,8 +2630,8 @@
 		4279433534280416F396496438D12EAC /* Build configuration list for PBXNativeTarget "AnyErrorKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3E41ADE1ED0E15844F89E51F9529C3F1 /* Debug */,
-				BCE8042F7C0928DB09648C84B08E4631 /* Release */,
+				B70E1B623F70E9A5E6694570588F1BB7 /* Debug */,
+				5156F95A579569B0C526DFDC259099E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2639,8 +2639,8 @@
 		45EA9E572923C08FEBB60720EC22613B /* Build configuration list for PBXNativeTarget "JSONParsing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C079D3D357FD72432BC6951F76DA9E0 /* Debug */,
-				0CEA212303080E08316665B0436DA2AC /* Release */,
+				BB84F45C6E89B3B23E12CD1FD2CD87D5 /* Debug */,
+				A3DCFF0A87A1374FB0D699EF5760B17D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2657,8 +2657,8 @@
 		63337E8CD6D143BCAB162E3536C09FE7 /* Build configuration list for PBXNativeTarget "FoxAPIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19325F42DB95CDE036BBDE33A4CB60F7 /* Debug */,
-				387A4C04FE7109711930BC488063CFD1 /* Release */,
+				59536D7671237064D3C6252639179448 /* Debug */,
+				0FEDBD48AAE2A86F9D9822FB1C93D925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2711,8 +2711,8 @@
 		EE1CB1714ABE4710B96C4AB5DE1C3F56 /* Build configuration list for PBXNativeTarget "FLUtilities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31B62507FFF3165FDD1654304850957F /* Debug */,
-				388BCBCD06F5A3DD61F41542CD5DFC31 /* Release */,
+				DB06EFDFAA7C7AFF2BCADFD6C4D389E7 /* Debug */,
+				A9A37DC320BDFBA208E0850E572BFA17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
