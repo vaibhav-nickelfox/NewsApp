@@ -96,18 +96,23 @@ open class APIClient<U: AuthHeadersProtocol, V: ErrorResponseProtocol> {
 	open func clearAuthHeaders() {
 		self.authHeaders = nil
 	}
-	
+    
+    open func request<T: JSONParseable> (_ router: Router, completion: @escaping (_ result: APIResult<T>) -> Void) {
+        let _ = self.requestInternal(router: router, completion: completion)
+    }
+
+    open func request<T: JSONParseable> (_ urlRouter: URLRouter, completion: @escaping (_ result: APIResult<T>) -> Void) {
+        if urlRouter.url.isFileURL {
+            self.requestWithFileUrl(urlRouter, completion: completion)
+        } else {
+            self.request(urlRouter, completion: completion)
+        }
+    }
+
 }
 
 //MARK: Offline Request
 extension APIClient {
-	public func request<T: JSONParseable> (_ urlRouter: URLRouter, completion: @escaping (_ result: APIResult<T>) -> Void) {
-		if urlRouter.url.isFileURL {
-			self.requestWithFileUrl(urlRouter, completion: completion)
-		} else {
-			self.request(urlRouter, completion: completion)
-		}
-	}
 	
 	fileprivate func requestWithFileUrl<T: JSONParseable> (_ urlRouter: URLRouter, completion: @escaping (_ result: APIResult<T>) -> Void) {
 		let completionHandler: (_ result: APIResult<T>) -> Void = { result in
@@ -127,14 +132,13 @@ extension APIClient {
 					print("Response at Url: \(urlRouter.url.absoluteString)")
 					print("\(String(data: data, encoding: .utf8) ?? ""))")
 				}
-				
-				let json = try JSON.init(data: data, options: .allowFragments)
-				// var error: NSError?
-				// let json = JSON.init(data: data, options: .allowFragments, error: &error)
-				// if error != nil {
-				// 	completionHandler(.failure(APIClientError.errorReadingUrl(urlRouter.url)))
-				// 	return
-				// }
+//                var error: NSError?
+//                let json = JSON.init(data: data, options: .allowFragments, error: &error)
+                let json = try JSON(data: data, options: JSONSerialization.ReadingOptions.allowFragments)
+//                if error != nil {
+//                    completionHandler(.failure(APIClientError.errorReadingUrl(urlRouter.url)))
+//                    return
+//                }
 				let result: T = try self.parse(json, router: urlRouter, 200)
 				completionHandler(.success(result))
 			} catch let error as AnyError {
@@ -149,10 +153,6 @@ extension APIClient {
 
 //MARK: JSON Request
 extension APIClient {
-
-	public func request<T: JSONParseable> (_ router: Router, completion: @escaping (_ result: APIResult<T>) -> Void) {
-		let _ = self.requestInternal(router: router, completion: completion)
-	}
 
 	fileprivate func requestInternal<T: JSONParseable> (router: Router, completion: @escaping (_ result: APIResult<T>) -> Void) -> Request {
 		
@@ -203,22 +203,20 @@ extension APIClient {
 				}
 			}
 			
-            let code = response.response?.statusCode ?? DefaultStatusCode
-            var json = JSON.null
-            if let data = response.data {
+			let code = response.response?.statusCode ?? DefaultStatusCode
+			var json = JSON.null
+			if let data = response.data {
                 do {
-                    json = try JSON(data: data)
+                    json = try JSON(data: data, options: .allowFragments)
                 } catch {
-                    completionHandler(.failure(this.parseError(json, code)))
+                    completionHandler(.failure(error as NSError))
                 }
-            }
-            
-            if 200...299 ~= code {
-                handleJson(json, code: code)
-            } else {
-                completionHandler(.failure(this.parseError(json, code)))
-            }
-
+			}
+			if 200...299 ~= code {
+				handleJson(json, code: code)
+			} else {
+				completionHandler(.failure(this.parseError(json, code)))
+			}
 		}
 	}
 
